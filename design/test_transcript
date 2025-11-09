@@ -1,0 +1,79 @@
+run
+# APB Testbench starts!!!!
+# 
+# 
+# Start Basic Write Operation Test!!!
+# Time 50, Write operation Completed!! Address = 5, Data is aa
+# 
+# Start Basic Read Operation Test!!!!!
+# Time 80, Read operation Completed!! Address = 5, Data Read is aa
+# 
+# Start Address Decoding Test!!!
+# Start Basic Write Operation Test!!!
+# Time 110, Write operation Completed!! Address = 5, Data is a5
+# Start Basic Write Operation Test!!!
+# Time 140, Write operation Completed!! Address = 85, Data is 5a
+# 
+# Start Write Operation with Wait States Test!!
+# Slave ready signal delayed!!
+# Write Completed with Wait States: Address = 10, Data = bb
+# 
+# Start Read Operation with Wait States Test!!
+# Slave ready signal delayed!!
+# Read Completed with Wait States: Address = 10, Data = bb
+# 
+# Start Error Handling Test!!!
+# Time 225, PSLVERR in Write
+# Time 245, Error Condtion PSLVERR = 0, Invalid Address = 1ff
+# Time 245, PSLVERR in Write
+# 
+# Start Burst Transfers Test!!!
+# Start Basic Write Operation Test!!!
+# Time 275, Write operation Completed!! Address = 1, Data is 11
+# Start Basic Read Operation Test!!!!!
+# Time 305, Read operation Completed!! Address = 1, Data Read is bb
+# Start Basic Write Operation Test!!!
+# Time 335, Write operation Completed!! Address = 2, Data is 22
+# Start Basic Read Operation Test!!!!!
+# Time 365, Read operation Completed!! Address = 2, Data Read is 11
+# Start Basic Write Operation Test!!!
+# Time 395, Write operation Completed!! Address = 3, Data is 33
+# Start Basic Read Operation Test!!!!!
+# Time 425, Read operation Completed!! Address = 3, Data Read is 22
+# Burst Transfer Completed!!
+# 
+# Start Out of Range Address Handling Test!!!
+# No ERROR detected for invalid address 1ff, PSLVERR = 0
+# Time 455, PSLVERR in Write
+# 
+# Test Reset Behavior!!!
+# System Reset Asserted!!
+# System Reset Released. Register and signalsshould return to default states. State is 0
+# 
+# Start Randomized Transactions Test!!!
+# Read Transaction: Address = 81
+# Write Transaction: Address = 63, Data = 48
+# Write Transaction: Address = 65, Data = 25
+# Write Transaction: Address = d, Data = c6
+# Write Transaction: Address = ed, Data = f7
+# Write Transaction: Address = c6, Data = 25
+# Read Transaction: Address = e5
+# Write Transaction: Address = 12, Data = 9f
+# Read Transaction: Address = ce
+# Read Transaction: Address = c5
+# Read Transaction: Address = bd
+# Write Transaction: Address = 65, Data = 67
+# Read Transaction: Address = 80
+# Read Transaction: Address = aa
+# Write Transaction: Address = 96, Data = d8
+# Write Transaction: Address = 53, Data = 1e
+# Write Transaction: Address = 2, Data = 1b
+# Write Transaction: Address = cf, Data = 2
+# Read Transaction: Address = ca
+# Read Transaction: Address = f2
+# 
+# APB System Tesbench Completed!!!!
+# ** Note: $finish    : D:/Job/APB/design/apb_tb.sv(274)
+#    Time: 1105 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at D:/Job/APB/design/apb_tb.sv line 274
