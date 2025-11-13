@@ -17,7 +17,6 @@ module apb_top(
 
 //Internal Signals to connect master and slaves
 //wire PENABLE; //Enable signal
-wire PWRITE; //Write Contriol Signal
 wire [31:0]PADDR;/// Address Bus
 wire [31:0]PWDATA; //Write data bus
 wire [31:0]prdata1, prdata2; //Read data from slaves
@@ -74,3 +73,4 @@ apb_slave slave_one(
 
 assign pready = (psel1 && pready1);
 endmodule// Code your design here
+
