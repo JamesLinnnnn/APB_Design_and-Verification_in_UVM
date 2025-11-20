@@ -50,7 +50,6 @@ endtask: run_phase
 
 task drive(APB_sequence_item item);
 
-  // Setup phase
   vif.PRESETn          = item.PRESETn;
   vif.TRANSFER         = item.TRANSFER;
   vif.write            = item.write;
@@ -103,3 +102,4 @@ task drive(APB_sequence_item item);
 
 endtask:drive
 endclass: APB_driver
+
